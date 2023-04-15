@@ -1,0 +1,5 @@
+You will need the following modules:
+
+- Tkinter
+- Ttkbootstrap
+- requests
