@@ -7,7 +7,7 @@ window = ttk.Window(themename="darkly")
 window.geometry("500x650")
 window.title("GPT-2 Basic Sentence Completion")
 
-API_TOKEN = "GET YOUR API TOKEN FROM THE API URL"
+API_TOKEN = "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"
 API_URL = "https://api-inference.huggingface.co/models/gpt2-large"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
@@ -38,5 +38,7 @@ input_box.pack(pady=10)
 button = ttk.Button(window, text="Get response", command=query)
 button.pack(pady=10)
 
+label = ttk.Label(window, bootstyle="dark", text="Generated with GPT-2.", font=("Arial Bold", 10))
+label.pack()
 
 window.mainloop()
