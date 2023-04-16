@@ -24,7 +24,7 @@ def query():
         input_box.config(foreground="white", font=("Arial", 10))
     except Exception as e:
         input_box.delete("1.0", "end")
-        input_box.insert("1.0", "An error occured, that's all we know ¯\_(ツ)_/¯")
+        input_box.insert("1.0", "An error occurred.")
         input_box.config(foreground="red", font=("Arial Bold", 10))
         print(e)
 
@@ -38,7 +38,7 @@ input_box.pack(pady=10)
 button = ttk.Button(window, text="Get response", command=query)
 button.pack(pady=10)
 
-label = ttk.Label(window, bootstyle="dark", text="Generated with GPT-2.", font=("Arial Bold", 10))
+label = ttk.Label(window, bootstyle="dark", text="Generated with the GPT-2 Large API on Hugging Face.", font=("Arial Bold", 10))
 label.pack()
 
 window.mainloop()
