@@ -7,7 +7,7 @@ window = ttk.Window(themename="darkly")
 window.geometry("500x650")
 window.title("GPT-2 Basic Sentence Completion")
 
-API_TOKEN = "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"
+API_TOKEN = "YOUR API KEY"
 API_URL = "https://api-inference.huggingface.co/models/gpt2-large"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
